@@ -1,9 +1,10 @@
-import { hello } from '@pages/hello'
+import { products } from '@pages/products'
 
+import 'bootstrap'
 import '@styles/main.scss'
 
 const App = () => {
-  hello()
+  products()
 }
 
 App()

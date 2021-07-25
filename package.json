@@ -26,5 +26,9 @@
     "webpack-cli": "^3.3.8",
     "webpack-dashboard": "^3.2.0",
     "webpack-dev-server": "^3.8.0"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.9.2",
+    "bootstrap": "^5.0.2"
   }
 }
