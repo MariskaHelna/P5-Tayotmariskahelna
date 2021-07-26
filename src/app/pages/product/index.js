@@ -1,8 +1,8 @@
-const listProductUrl = "http://localhost:3000/api/teddies"
+const productUrl = "http://localhost:3000/api/teddies/"
 
 // recupérer les produits depuis l'API
-export const products = () => {
-    return fetch(listProductUrl)
+export const product = (id) => {
+    return fetch(productUrl + id)
         .then((res) => {
             if (res.ok) {
                 return res.json();
