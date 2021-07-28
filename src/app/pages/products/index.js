@@ -28,7 +28,7 @@ export const showProducts = () => {
                 <h5 class="card-title">${product.name}</h5>
                 <p class="card-text"> ${product.price}</p>
                 <p class="card-text"> ${product.description} </p>
-                <a href="produit.html?id=${product._id}" class="btn btn-primary">Voir plus</a>
+                <a href="produit.html?_id=${product._id}" class="btn btn-primary">Voir plus</a>
                 </div>
             </div>
         </div>
