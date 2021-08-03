@@ -20,10 +20,10 @@ export const showProducts = () => {
         values.forEach(product => {
 
             cards.innerHTML += 
-            `<div class="col-6">
-                <div class="card bg-dark text-white">
-                    <img src="${product.imageUrl}" class="card-img" alt="...">
-                    <div class="card-img-overlay">
+            `<div class="col-6 mt-5">
+                <div class="card style="width:18rem;">
+                    <img src="${product.imageUrl}" class="card-img-top img-thumbnail " alt="...">
+                    <div class="card-body">
                     <h5 class="card-title">${product.name}</h5>
                     <p class="card-text"> ${product.price + " euros"}</p>
                     <p class="card-text"> ${product.description} </p>

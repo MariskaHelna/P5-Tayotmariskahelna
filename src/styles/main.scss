@@ -1,2 +1,15 @@
 @import "_custom";
 @import "~bootstrap/scss/bootstrap";
+.card-img-top{
+    object-fit: cover;
+    height: 300px;
+    width: 455px;
+}
+h5,p{
+    color: black;
+}
+.img-fluid{
+    object-fit: cover;
+    height: 327px;
+    width: 400px;
+}
