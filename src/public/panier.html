@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Projet 5</title>
+  <title>Page panier</title>
 </head>
 <body>
   <!-- header -->
@@ -24,3 +24,104 @@
       </div>
     </div>
   </nav>
+<div class="container-fluid">
+  <table class="table caption-top">
+    <caption>Liste des articles</caption>
+    <thead>
+      <tr>
+        <th scope="col">Image</th>
+        <th scope="col">Nom</th>
+        <th scope="col">Quantité</th>
+        <th scope="col">Prix</th>
+        <th scope="col">Supprimer</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td> 1 </td>
+        <td>2 euros</td>
+        <td> <i class="fas fa-trash-alt"></i></td>
+
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td> 1 </td>
+        <td>11 euros</td>
+        <td> <i class="fas fa-trash-alt"></i> </td>
+
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Larry</td>
+        <td> 1 </td>
+        <td>12 euros</td>
+        <td> <i class="fas fa-trash-alt"></i> </td>
+      </tr>
+
+      <tr>
+        <th scope="row">4</th>
+        <td> Nathan </td>
+        <td> 1 </td>
+        <td> 13 euros</td>
+        <td> <i class="fas fa-trash-alt"></i> </td>
+      </tr>
+
+      <tr>
+        <th scope="row">5</th>
+        <td> Lucas </td>
+        <td> 1 </td>
+        <td> 15 euros </td>
+        <td> <i class="fas fa-trash-alt"></i> </td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <th scope="row">Total</th>
+            <td></td>
+            <td> quantité totale  </td>
+            <td> prix total </td>
+            <td> <a href="#carte"> <i class="far fa-credit-card"></i> </td> </a>
+    
+          </tr>
+      </tfoot>
+
+  </table>
+</div>
+
+
+<div class="container-fluid"> 
+    <div class="mb-3 mt-5">
+      <label for="exampleFormControlTextarea1" class="form-label" id="carte"> choix de carte </label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" ></textarea>
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label"> Nom et Prenom</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" ></textarea>
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label"> Numero de carte </label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" ></textarea>
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">Date </label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" ></textarea>
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label"> Cvv</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" ></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label"> Total a payer </label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" ></textarea>
+      </div>
+      <a class="btn btn-primary" href="formulaire.html" role="button"> Commande validé </a>
+
+</div>
+
+  <script src="./bundle.js"></script>
+</body>
+</html>
