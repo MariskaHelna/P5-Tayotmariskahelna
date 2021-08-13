@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Page panier</title>
+</head>
+<body>
+  <!-- header -->
+  <nav class="navbar navbar-expand-lg navbar-dark justify-content-center">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Orinoco</a>
+      <a class="navbar-brand" href="index.html">Accueil</a>
+      <a class="navbar-brand" href="panier.html">Panier</a>
+    </div>
+  </nav>
+
+<div class="container-fluid">
+  <table class="table caption-top">
+    <caption>Liste des articles</caption>
+    <thead>
+      <tr>
+        <th id="image" scope="col">Image</th>
+        <th id="nom" scope="col">Nom</th>
+        <th id="quantite" scope="col">Quantité</th>
+        <th id="prix" scope="col">Prix</th>
+      </tr>
+    </thead>
+    <tbody id="list-panier"></tbody>
+
+    <tfoot>
+        <tr>
+            <th scope="row">Total</th>
+            <td></td>
+            <td> quantité totale  </td>
+            <td> prix total </td>
+          </tr>   
+      </tfoot>
+
+  </table>
+</div>
+
+<div class="d-grid gap-2 col-6 mx-auto">
+  <button class="btn btn-primary" type="button"> <a class="valider" href="#formulaire">  Valider la commande </a> </button>
+  <button class="btn btn-primary" id="bouton-vider" type="button"> Vider le panier </button>
+</div>
+
+<div class="container-fluid"> 
+  <div class="mt-3 "> FORMULAIRE DE LIVRAISON </div>
+    <div class="mb-3 mt-5">
+      <label for="exampleFormControlTextarea1" class="form-label" id="formulaire"> Nom </label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" ></textarea>
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label"> Prenom </label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" ></textarea>
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label"> Adresse </label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" ></textarea>
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label"> Boite Postale </label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" ></textarea>
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label"> Ville </label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" ></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label"> Email address </label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <a class="btn btn-primary" href="#" role="button"> Valider l'adresse de Livraison </a>
+
+</div>
+
+  <script src="./panier.js"></script>
+</body>
+</html>
