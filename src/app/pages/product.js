@@ -35,14 +35,10 @@ export const showProduct = () => {
 
 // recuperer les données depuis le local storage 
 export const getPanierFromStorage = () => {
-    let panierData = JSON.parse(localStorage.getItem("panier"));
-    
-    if (panierData===null) {
-        return []
-    }
+    let panierData = JSON.parse(localStorage.getItem("panier")) || [];
 
     return panierData;
-}
+ }
 
 // sauvegarde les données dans le local storage 
 const sauvegardePanier = (panierData) => {
@@ -55,6 +51,7 @@ if(boutonPanier!==null){
 
     boutonPanier.onclick = () => {
         let panierData = getPanierFromStorage();
+        productData.quantity = parseInt(document.getElementById("quantity").value);
     
         panierData.push(productData);
     
