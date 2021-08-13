@@ -1,5 +1,6 @@
-import { showProducts } from '@pages/products'
-import { product } from '@pages/product'
+import { showProducts } from '@pages/products.js'
+// import { showProduct } from '@pages/product.js'
+
 
 import 'bootstrap'
 import '@styles/main.scss'
@@ -9,8 +10,8 @@ import '@fortawesome/fontawesome-free/js/regular'
 import '@fortawesome/fontawesome-free/js/brands'
 
 const App = () => {
-  showProducts(),
-  product()
+  showProducts()
+  // showProduct()
 }
 
 App()

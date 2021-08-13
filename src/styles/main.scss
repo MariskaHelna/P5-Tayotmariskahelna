@@ -3,8 +3,8 @@
 
 .card-img-top{
     object-fit: cover;
-    height: 300px;
-    width: 455px;
+    height: 380px;
+    width: 545px;
 }
 h5,p{
     color: black;
@@ -14,3 +14,34 @@ h5,p{
     height: 317px;
     width: 400px;
 }
+body{
+    background-color: #f2f2f2;
+}
+.navbar{
+    background-color: darkblue;
+}
+.mini-image{
+    height: 40px;
+    width: 40px;
+}
+.valider{
+    text-decoration: none;
+    color: white;
+}
+
+@media only screen and (max-width: 800px) {
+.col-6{
+    width: auto;
+}
+.card-img-top{
+    height: 272px;
+}
+}
+@media only screen and ( min-width: 801px) and (max-width: 1024px) {
+    .card-img-top {
+        height: 260px;
+    }
+}
+
+
+
