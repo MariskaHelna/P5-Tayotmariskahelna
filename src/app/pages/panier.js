@@ -15,6 +15,19 @@ const totalPrice = () => {
     return total;
 }
 
+const totalQuantity = () => {
+
+    let panier = getPanierFromStorage();
+
+    let total = 0;
+
+    panier.forEach((data) => {
+        total += data.quantity;
+    });
+
+    return total;
+}
+
 function showPanier(){
     const listTr = document.getElementById("list-panier");
     listTr.innerHTML = null;
@@ -30,6 +43,7 @@ function showPanier(){
 
     });
     document.getElementById("prix-total").innerText = totalPrice()  + " euros";
+    document.getElementById("quantite-total").innerText = totalQuantity();
 
 }
 
