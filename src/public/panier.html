@@ -17,6 +17,7 @@
   </nav>
 
 <div class="container-fluid">
+
   <table class="table caption-top">
     <caption>Liste des articles</caption>
     <thead>
@@ -39,47 +40,45 @@
       </tfoot>
 
   </table>
-</div>
-<div class="d-grid gap-2 col-6 mx-auto">
-  <button class="btn btn-primary" type="button"> <a class="valider" href="#validationDefault01">  Valider la commande </a> </button>
-  <button class="btn btn-primary" id="bouton-vider" type="button"> Vider le panier </button>
-</div>
 
-<div class="container-fluid" > 
-<form class="row g-3 mt-5" id="form" > 
-  <div class="col-md-6">
-    <label for="validationDefault01" class="form-label">Nom</label>
-    <input type="text" class="form-control" id="validationDefault01" value="" required>
+  <div class="d-grid gap-2 col-6 mx-auto">
+    <button class="btn btn-primary" type="button"> <a class="valider" href="#validationDefault01">  Valider la commande </a> </button>
+    <button class="btn btn-primary" id="bouton-vider" type="button"> Vider le panier </button>
   </div>
-  <div class="col-md-6">
-    <label for="validationDefault02" class="form-label">Prenom</label>
-    <input type="text" class="form-control" id="validationDefault02" value="" required>
-  </div>
-  <div class="col-md-6">
-    <label for="validationDefaultUsername" class="form-label">adresse mail</label>
-    <div class="input-group">
-      <span class="input-group-text" id="inputGroupPrepend2">@</span>
-      <input type="email" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
+
+  <form class="row g-3 mt-5" id="form" > 
+    <div class="offset-md-3 col-md-6">
+      <h1>Formulaire de contact</h1>
     </div>
-  </div>
-  <div class="col-md-6">
-    <label for="validationDefault03" class="form-label">Adresse</label>
-    <input type="text" class="form-control" id="validationDefault03" required>
-  </div>
-  <div class="col-md-6">
-    <label for="validationDefault04" class="form-label">Ville</label>
-    <input type="text" class="form-control" id="validationDefault04" value="" required>
-  </div>
-  <div class="col-md-6">
-    <label for="validationDefault05" class="form-label">boite postale</label>
-    <input type="text" class="form-control" pattern="[0-9]{5}" id="validationDefault05" required>
-  </div>
-  
-  <div class="col-md-4">
-    <button class="btn btn-primary" type="submit" id="submit">Submit form</button>
-  </div>
-  <br> <span id="myerror"></span> </br>
-</form>
+    <div class="offset-md-3 col-md-6">
+      <label for="lastName" class="form-label">Nom</label>
+      <input type="text" class="form-control" id="lastName" required>
+    </div>
+    <div class="offset-md-3 col-md-6">
+      <label for="firstName" class="form-label">Prenom</label>
+      <input type="text" class="form-control" id="firstName" required>
+    </div>
+    <div class="offset-md-3 col-md-6">
+      <label for="email" class="form-label">adresse mail</label>
+      <div class="input-group">
+        <span class="input-group-text" id="inputGroupPrepend2">@</span>
+        <input type="email" class="form-control" id="email"  aria-describedby="inputGroupPrepend2" required>
+      </div>
+    </div>
+    <div class="offset-md-3 col-md-6">
+      <label for="address" class="form-label">Adresse</label>
+      <input type="text" class="form-control" id="address" required>
+    </div>
+    <div class="offset-md-3 col-md-6">
+      <label for="city" class="form-label">Ville</label>
+      <input type="text" class="form-control" id="city" required>
+    </div>
+    <div class="offset-md-3 col-md-6">
+      <button class="btn btn-primary" type="submit" id="submit">Valider la commande</button>
+    </div>
+    <br> <span id="myerror"></span> </br>
+  </form>
+
 </div>
 
   <script src="./panier.js"></script>

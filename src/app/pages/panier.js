@@ -58,3 +58,72 @@ boutonVider.onclick = () => {
     showPanier();
 }
 
+
+// validation du formulaire 
+
+let form = document.getElementById('form')
+
+form.addEventListener('submit', function(e){
+
+// let firstName = document.getElementById('firstName').value;
+// let lastName = document.getElementById('lastName').value;
+// let address = document.getElementById('address').value;
+// let city = document.getElementById('city').value;
+// let email  = document.getElementById('email').value;
+
+// let data = {
+//     "firstName":firstName,
+//     "lastName":lastName,
+//     "address":address,
+//     "city":city,
+//     "email":email,
+// }
+
+
+let jsonBody = {
+    contact : {
+        firstName: "caca",
+        lastName:"lastName",
+        address: "address",
+        city:"city",
+        email:"email",
+    },
+
+    products : [
+        "5be9c8541c9d440000665243",
+        "5beaa8bf1c9d440000a57d94"
+    ]
+
+}   
+
+fetch("http://localhost:3000/api/teddies/order", 
+{
+	method: "POST",
+	headers: { 
+        'Accept': 'application/json', 
+        'Content-Type': 'application/json' 
+    },
+	body: JSON.stringify(jsonBody)
+})
+ .then(function(res) {
+    if (res.ok) {
+      return res.json();
+    }
+  })
+  .then(function(value) {
+     console.log(value)
+  });
+
+
+
+
+e.preventDefault();
+});
+
+
+
+// form.onsubmit = (e) => {
+//     console.log(new FormData(form))
+
+//     e.preventDefault();
+// }

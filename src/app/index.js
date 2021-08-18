@@ -2,6 +2,8 @@ import { showProducts } from '@pages/products.js'
 // import { showProduct } from '@pages/product.js'
 
 
+
+
 import 'bootstrap'
 import '@styles/main.scss'
 import '@fortawesome/fontawesome-free/js/fontawesome'
