@@ -43,7 +43,7 @@
 
   <div class="d-grid gap-2 col-6 mx-auto">
     <button class="btn btn-primary" type="button"> <a class="valider" href="#validationDefault01">  Valider la commande </a> </button>
-    <button class="btn btn-primary" id="bouton-vider" type="button"> Vider le panier </button>
+    <button class="btn btn-danger" id="bouton-vider" type="button"> Vider le panier </button>
   </div>
 
   <form class="row g-3 mt-5" id="form" > 
@@ -79,7 +79,26 @@
     <br> <span id="myerror"></span> </br>
   </form>
 
+<!-- Modal -->
+<div class="modal fade" id="confirmation-commande" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"> Commande validée </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <p> Merci pour votre commande <span id="orderid"> orderId </span> d'un montant <span id="cmd-prix-total"> prixTotal</span> . </p> 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Fermer </button>
+      </div>
+    </div>
+  </div>
 </div>
+
+</div>
+
 
   <script src="./panier.js"></script>
 </body>

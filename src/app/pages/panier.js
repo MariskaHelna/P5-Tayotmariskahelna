@@ -1,6 +1,10 @@
 import {getPanierFromStorage } from '@pages/product.js'
 
 import '@styles/main.scss'
+import { Modal } from 'bootstrap'
+
+// création de la modal
+var myModal = new Modal(document.getElementById('confirmation-commande'))
 
 const totalPrice = () => {
 
@@ -89,10 +93,7 @@ let jsonBody = {
         email:"email",
     },
 
-    products : [
-        "5be9c8541c9d440000665243",
-        "5beaa8bf1c9d440000a57d94"
-    ]
+    products : listIdProduct()
 
 }   
 
@@ -111,19 +112,34 @@ fetch("http://localhost:3000/api/teddies/order",
     }
   })
   .then(function(value) {
-     console.log(value)
+     confirmationCommande(value);
+     
   });
-
-
-
 
 e.preventDefault();
 });
 
 
+const confirmationCommande = (value) => {
+    console.log(value)
 
-// form.onsubmit = (e) => {
-//     console.log(new FormData(form))
+    document.getElementById("orderid").innerHTML = value.orderId ;
+    document.getElementById("cmd-prix-total").innerHTML = totalPrice()  + " euros";
+    
+    // afficher le message de validation commande
+    myModal.show();
+}
 
-//     e.preventDefault();
-// }
+const listIdProduct = () => {
+    let listId = [];
+    let panier = getPanierFromStorage();
+
+    panier.forEach((data) => {
+        for (let i = 0; i < data.quantity; i++) {
+            listId.push(data._id)   
+           }
+    });
+
+    return listId;
+}
+  
