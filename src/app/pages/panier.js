@@ -67,32 +67,25 @@ boutonVider.onclick = () => {
 
 let form = document.getElementById('form')
 
-form.addEventListener('submit', function(e){
+form.onsubmit =  (e) => {
 
-// let firstName = document.getElementById('firstName').value;
-// let lastName = document.getElementById('lastName').value;
-// let address = document.getElementById('address').value;
-// let city = document.getElementById('city').value;
-// let email  = document.getElementById('email').value;
+let firstName = document.getElementById('firstName').value;
+let lastName = document.getElementById('lastName').value;
+let address = document.getElementById('address').value;
+let city = document.getElementById('city').value;
+let email  = document.getElementById('email').value;
 
-// let data = {
-//     "firstName":firstName,
-//     "lastName":lastName,
-//     "address":address,
-//     "city":city,
-//     "email":email,
-// }
+let data = {
+    "firstName":firstName,
+    "lastName":lastName,
+    "address":address,
+    "city":city,
+    "email":email,
+}
 
 
 let jsonBody = {
-    contact : {
-        firstName: "caca",
-        lastName:"lastName",
-        address: "address",
-        city:"city",
-        email:"email",
-    },
-
+    contact: data,
     products : listIdProduct()
 
 }   
@@ -117,7 +110,7 @@ fetch("http://localhost:3000/api/teddies/order",
   });
 
 e.preventDefault();
-});
+};
 
 
 const confirmationCommande = (value) => {
