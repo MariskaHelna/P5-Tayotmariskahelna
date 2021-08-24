@@ -22,3 +22,6 @@ L'application web doit être composée de 4 pages :
 - ensuite,npm install
 - puis,npm start
 - Une fois le serveur lancé, écrire l'url de l'API: http://localhost:3000/api/teddies .
+
+# Tester le projet :
+Pour tester le projet alle sur : http://localhost:7700/index.html .
