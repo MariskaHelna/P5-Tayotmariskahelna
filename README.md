@@ -1,4 +1,3 @@
-# P5-Tayotmariskahelna
 # Projet 5 du parcours Développeur web d'OpenClassrooms : Construire un site e-commerce
 Il s'agit d'un MVP (Produit Minimum Viable) d'une application thématique ne vendant qu'un seul type de produits (ici des ours) ; la partie back-end est fournie et l'objectif est de créer la partie front-end par la consommation d'une API fournie. Aucune maquette n'est fournie.
 
