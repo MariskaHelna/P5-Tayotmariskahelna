@@ -11,8 +11,8 @@ h5,p{
 }
 .img-fluid{
     object-fit: cover;
-    height: 317px;
-    width: 400px;
+    height: 270px;
+    width: 500px;
 }
 body{
     background-color: #f2f2f2;
@@ -41,7 +41,14 @@ body{
     .card-img-top {
         height: 260px;
     }
+    .img-fluid{
+        object-fit: cover;
+        height: 317px;
+        width: 400px;
+    }
 }
+
+
 
 
 
