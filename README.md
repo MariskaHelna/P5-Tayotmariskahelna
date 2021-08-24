@@ -10,9 +10,12 @@ L'application web doit être composée de 4 pages :
 - une page de confirmation de commande, remerciant l'utilisateur pour sa commande, et indiquant le prix total et l'identifiant de commande envoyé par le serveur .
 
 # Compétences évaluées :
-Interagir avec un web service avec JavaScript
-Créer un plan de test pour une application
-
+- Interagir avec un web service avec JavaScript
+- Créer un plan de test pour une application
+# Livrables
+- Le lien vers un dépôt Git public contenant le code de l'application web.
+(Le mentor et l'évaluateur doivent être en mesure de cloner le référentiel, d'ouvrir index.html, d'utiliser l'application entièrement opérationnelle et de confirmer que n’importe quel input utilisateur est validé.)
+- Un plan de tests.
 
 # Pour lancer le projet :
 - Cloner le projet dans un premier temps
