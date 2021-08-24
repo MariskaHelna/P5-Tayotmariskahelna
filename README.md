@@ -2,6 +2,6 @@
 
 POUR LANCER LE PROJET :
 - Cloner le projet dans un premier temps
-- npm install
-- npm start
-- Pour terminer aller sur le localhost 7700 .
+- ensuite,npm install
+- puis,npm start
+- Une fois le serveur lancé,écrire l'url de l'API: http://localhost:7700/index.html.
