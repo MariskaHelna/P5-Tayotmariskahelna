@@ -106,20 +106,21 @@ fetch("http://localhost:3000/api/teddies/order",
   })
   .then(function(value) {
      confirmationCommande(value);
+     localStorage.removeItem('panier')
+     showPanier();
      
   });
 
 e.preventDefault();
 };
 
-
+// afficher le message de validation commande
 const confirmationCommande = (value) => {
     console.log(value)
 
     document.getElementById("orderid").innerHTML = value.orderId ;
     document.getElementById("cmd-prix-total").innerHTML = totalPrice()  + " euros";
     
-    // afficher le message de validation commande
     myModal.show();
 }
 
