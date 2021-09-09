@@ -18,10 +18,12 @@ L'application web doit être composée de 4 pages :
 - Un plan de tests.
 
 # Pour lancer le projet :
-- Cloner le projet dans un premier temps
-- ensuite,npm install
-- puis,npm start
-- Une fois le serveur lancé, écrire l'url de l'API: http://localhost:3000/api/teddies .
+- Dans un premier temps,cloner ce repository : https://github.com/OpenClassrooms-Student-Center/JWDP5 et créer un dossier back-end .
+- Dans un terminal se placer dans le dossier back-end et lancer node server .
+- Dans le terminal de visual studio code faire npm start
+- Le terminal (de visual studio code) te donne un message à copier dans le terminal (recopie-le et met-le dans le terminal) .
+- relancer le terminal ( de visual studio code) avec npm start .
+
 
 # Tester le projet :
-Pour tester le projet alle sur : http://localhost:7700/index.html .
+Pour tester le projet aller sur : http://localhost:7700/index.html .
